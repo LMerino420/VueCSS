@@ -6,7 +6,8 @@
 			<!-- <logIn /> -->
 			<!-- <createAccount /> -->
 			<!-- <editAccount /> -->
-			<mainHome />
+			<!-- <mainHome /> -->
+			<newOrder />
 		</template>
 		<template #fallback>
 			<splashHome />
@@ -66,11 +67,20 @@ export default {
 		// 		}),
 		// ),
 
-		mainHome: defineAsyncComponent(
+		// mainHome: defineAsyncComponent(
+		// 	() =>
+		// 		new Promise((res) => {
+		// 			setTimeout(() => {
+		// 				res(import("./components/home/mainHome.vue"));
+		// 			}, 2000);
+		// 		}),
+		// ),
+
+		newOrder: defineAsyncComponent(
 			() =>
 				new Promise((res) => {
 					setTimeout(() => {
-						res(import("./components/home/mainHome.vue"));
+						res(import("./components/newOrder.vue"));
 					}, 2000);
 				}),
 		),
@@ -89,7 +99,7 @@ export default {
 	--black: #000;
 	--sm: 14px;
 	--md: 16px;
-	--leg: 18px;
+	--lg: 18px;
 }
 body {
 	font-family: "Quicksand", sans-serif;
