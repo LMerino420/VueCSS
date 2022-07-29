@@ -1,4 +1,6 @@
 <template>
+	<!-- <desktopMenu /> -->
+	<!-- <mobileMenu /> -->
 	<section class="main-container">
 		<div class="card-container">
 			<div class="product-card">
@@ -107,6 +109,11 @@
 		</div>
 	</section>
 </template>
+
+<script setup>
+// import desktopMenu from "./desktopMenu.vue";
+// import mobileMenu from "./mobileMenu.vue";
+</script>
 
 <style scoped>
 .card-container {
