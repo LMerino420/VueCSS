@@ -1,7 +1,7 @@
 <template>
 	<!-- <desktopMenu /> -->
 	<!-- <mobileMenu /> -->
-	<navDesktop />
+	<!-- <navDesktop /> -->
 	<section class="main-container">
 		<div class="card-container">
 			<div class="product-card">
@@ -114,7 +114,7 @@
 <script setup>
 // import desktopMenu from "./desktopMenu.vue";
 // import mobileMenu from "./mobileMenu.vue";
-import navDesktop from "./navDesktop.vue";
+// import navDesktop from "./navDesktop.vue";
 </script>
 
 <style scoped>

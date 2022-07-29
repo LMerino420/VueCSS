@@ -6,9 +6,10 @@
 			<!-- <logIn /> -->
 			<!-- <createAccount /> -->
 			<!-- <editAccount /> -->
-			<mainHome />
+			<!-- <mainHome /> -->
 			<!-- <newOrder /> -->
 			<!-- <myOrders /> -->
+			<detailProduct />
 		</template>
 		<template #fallback>
 			<splashHome />
@@ -68,14 +69,14 @@ export default {
 		// 		}),
 		// ),
 
-		mainHome: defineAsyncComponent(
-			() =>
-				new Promise((res) => {
-					setTimeout(() => {
-						res(import("./components/home/mainHome.vue"));
-					}, 2000);
-				}),
-		),
+		// mainHome: defineAsyncComponent(
+		// 	() =>
+		// 		new Promise((res) => {
+		// 			setTimeout(() => {
+		// 				res(import("./components/home/mainHome.vue"));
+		// 			}, 2000);
+		// 		}),
+		// ),
 
 		// newOrder: defineAsyncComponent(
 		// 	() =>
@@ -94,6 +95,15 @@ export default {
 		// 			}, 2000);
 		// 		}),
 		// ),
+
+		detailProduct: defineAsyncComponent(
+			() =>
+				new Promise((res) => {
+					setTimeout(() => {
+						res(import("./components/detailProduct.vue"));
+					}, 2000);
+				}),
+		),
 	},
 };
 </script>
