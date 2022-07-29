@@ -7,7 +7,8 @@
 			<!-- <createAccount /> -->
 			<!-- <editAccount /> -->
 			<!-- <mainHome /> -->
-			<newOrder />
+			<!-- <newOrder /> -->
+			<myOrders />
 		</template>
 		<template #fallback>
 			<splashHome />
@@ -76,11 +77,20 @@ export default {
 		// 		}),
 		// ),
 
-		newOrder: defineAsyncComponent(
+		// newOrder: defineAsyncComponent(
+		// 	() =>
+		// 		new Promise((res) => {
+		// 			setTimeout(() => {
+		// 				res(import("./components/newOrder.vue"));
+		// 			}, 2000);
+		// 		}),
+		// ),
+
+		myOrders: defineAsyncComponent(
 			() =>
 				new Promise((res) => {
 					setTimeout(() => {
-						res(import("./components/newOrder.vue"));
+						res(import("./components/myOrders.vue"));
 					}, 2000);
 				}),
 		),
