@@ -9,7 +9,8 @@
 			<!-- <mainHome /> -->
 			<!-- <newOrder /> -->
 			<!-- <myOrders /> -->
-			<detailProduct />
+			<!-- <detailProduct /> -->
+			<carShop />
 		</template>
 		<template #fallback>
 			<splashHome />
@@ -96,11 +97,20 @@ export default {
 		// 		}),
 		// ),
 
-		detailProduct: defineAsyncComponent(
+		// detailProduct: defineAsyncComponent(
+		// 	() =>
+		// 		new Promise((res) => {
+		// 			setTimeout(() => {
+		// 				res(import("./components/detailProduct.vue"));
+		// 			}, 2000);
+		// 		}),
+		// ),
+
+		carShop: defineAsyncComponent(
 			() =>
 				new Promise((res) => {
 					setTimeout(() => {
-						res(import("./components/detailProduct.vue"));
+						res(import("./components/carShop.vue"));
 					}, 2000);
 				}),
 		),
